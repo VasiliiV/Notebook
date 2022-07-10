@@ -11,3 +11,7 @@ button.addEventListener('click', () => {
     <ul class="menu-number-del">X</ul>
 </div>`)
 })
+
+phoneIn.addEventListener('click', (event) => {
+    event.target.remove()
+})
