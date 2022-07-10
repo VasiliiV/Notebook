@@ -10,8 +10,9 @@ button.addEventListener('click', () => {
     <ul class="menu-number-numb">${number}</ul>
     <ul class="menu-number-del">X</ul>
 </div>`)
-})
+});
 
 phoneIn.addEventListener('click', (event) => {
-    event.target.remove()
-})
+    event.target.parentElement.remove() //parentElement это родительский элемент текущего узла
+});
+
