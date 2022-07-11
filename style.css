@@ -13,7 +13,10 @@
 .menu-number-del {
     color: red;
     font-size: x-large;
+    cursor: pointer;
 }
 .addNumber {
+    width: 270px;
     display: flex;
+    justify-content: space-between;
 }
