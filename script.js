@@ -15,7 +15,8 @@ button.addEventListener('click', () => {
 phoneIn.addEventListener('click', (event) => {
     if (event.target.classList.contains('menu-number-del')) {
         event.target.parentElement.remove() 
+    } else if (event.target.classList.contains('addNumber') === false) {
+        return
     }
     //parentElement это родительский элемент текущего узла
 });
-
