@@ -3,7 +3,7 @@ const button = document.getElementById("mn_btn");
 const phoneIn = document.getElementById('menu-number')
 
 button.addEventListener('click', () => {
-    const number = input.value
+    const number = input.value;
 
     phoneIn.insertAdjacentHTML('beforeend', 
 `<div class="addNumber">
@@ -13,6 +13,9 @@ button.addEventListener('click', () => {
 });
 
 phoneIn.addEventListener('click', (event) => {
-    event.target.parentElement.remove() //parentElement это родительский элемент текущего узла
+    if (event.target.classList.contains('menu-number-del')) {
+        event.target.parentElement.remove() 
+    }
+    //parentElement это родительский элемент текущего узла
 });
 
